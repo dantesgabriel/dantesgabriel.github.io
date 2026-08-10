@@ -65,28 +65,6 @@
   }
   .intro{ margin-top: 22px; max-width: 560px; font-size: 16px; color: var(--ink-soft); }
 
-  /* stamp */
-  .stamp{
-    position: absolute; top: 44px; right: 0;
-    width: 118px; height: 118px;
-    border: 2px solid var(--stamp);
-    border-radius: 50%;
-    display:flex; align-items:center; justify-content:center;
-    transform: rotate(-9deg);
-    color: var(--stamp);
-    opacity: 0.82;
-  }
-  .stamp::before{
-    content:''; position:absolute; inset:6px;
-    border: 1px dashed var(--stamp); border-radius:50%;
-    opacity: 0.6;
-  }
-  .stamp-text{ text-align:center; font-family: var(--mono); }
-  .stamp-text .top{ font-size: 9px; letter-spacing: 0.12em; display:block; }
-  .stamp-text .big{ font-family: var(--serif); font-weight:700; font-size: 22px; display:block; margin: 2px 0; }
-  .stamp-text .bottom{ font-size: 8px; letter-spacing: 0.1em; display:block; }
-  @media (max-width: 640px){ .stamp{ display:none; } }
-
   .cta-line{ margin-top: 30px; font-family: var(--mono); font-size: 13px; display:flex; gap:22px; flex-wrap:wrap; }
   .cta-line a{ color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule-strong); padding-bottom: 2px; }
   .cta-line a:hover{ border-color: var(--stamp); color: var(--stamp); }
@@ -153,9 +131,6 @@
 <div class="sheet">
 
   <div class="title-block">
-    <div class="stamp">
-      <span class="stamp-text"><span class="top">DISPONÍVEL</span><span class="big">GD</span><span class="bottom">2026</span></span>
-    </div>
     <div class="field">Nome</div>
     <h1>Gabriel Dantes Machado Moreira</h1>
     <div class="role-line">Desenvolvedor Backend — Node.js, TypeScript e arquiteturas escaláveis</div>
